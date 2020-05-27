@@ -72,6 +72,6 @@ void (function app () {
         })
       })
     })
-    fceux.downloadGame('r.nes')
+    fceux.downloadGame('rom.nes')
   }
 }())
