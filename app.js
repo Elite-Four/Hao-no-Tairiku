@@ -133,7 +133,7 @@ void (function app() {
           }
           if (keyName === 's' && down === false) {
             fceux.saveState()
-            save('Saved', fceux.exportSaveFiles())
+            save(fceux.exportSaveFiles())
             return true
           }
           if (keyName === 'l' && down === false) {
