@@ -1,24 +1,25 @@
 {
-  "name": "haou-no-tairiku",
+  "name": "hao-no-tairiku",
   "version": "0.0.0",
   "description": "三国志II 覇王の大陸",
   "main": "index.html",
   "scripts": {
-    "start": "http-server",
-    "test": "standard"
+    "start": "http-server -c-1",
+    "test": "eslint app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elite-Four/Haou-no-Tairiku.git"
+    "url": "git+https://github.com/Elite-Four/Hao-no-Tairiku.git"
   },
   "author": "George Cheng <Gerhut@GMail.com>",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/Elite-Four/Haou-no-Tairiku/issues"
+    "url": "https://github.com/Elite-Four/Hao-no-Tairiku/issues"
   },
-  "homepage": "https://github.com/Elite-Four/Haou-no-Tairiku#readme",
+  "homepage": "https://github.com/Elite-Four/Hao-no-Tairiku#readme",
   "devDependencies": {
+    "eslint": "^7.17.0",
     "http-server": "^0.12.3",
-    "standard": "^12.0.1"
+    "prettier": "^2.2.1"
   }
 }

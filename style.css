@@ -1,0 +1,26 @@
+div#canvas {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 240px;
+}
+canvas {
+  display: block;
+  margin: auto;
+}
+div#controller-left {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+div#controller-right {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+div#controller-right button {
+  width: 40%;
+}
