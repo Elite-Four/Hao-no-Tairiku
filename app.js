@@ -6,7 +6,7 @@ void (function app() {
   var gist = url.searchParams.get('gist')
 
   function cors(url) {
-    return 'https://test.cors.workers.dev/?' + encodeURIComponent(url)
+    return 'https://cors.gerhut.workers.dev/?' + encodeURIComponent(url)
   }
 
   if (!token) {
