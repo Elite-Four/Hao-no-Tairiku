@@ -39,6 +39,10 @@ void (function app() {
           }
           start(saveFiles)
         })
+        .catch(function (error) {
+          console.error(error)
+          document.querySelector('[data-key="l"]').classList.add('is-error')
+        })
     } else {
       alert('No gist id provided.\nWill create a new gist.')
       start()
@@ -50,6 +54,7 @@ void (function app() {
 
   function save(saveFiles) {
     if (!token) return
+    document.querySelector('[data-key="s"]').classList.remove('is-error')
     document.querySelector('[data-key="s"]').classList.add('is-loading')
     var apiUrl = 'https://api.github.com/gists'
     if (gist) {
@@ -86,6 +91,11 @@ void (function app() {
           history.replaceState(null, document.title, url.toString())
           prompt('Your save state url is', url)
         }
+      })
+      .catch(function (error) {
+        console.error(error)
+        document.querySelector('[data-key="s"]').classList.remove('is-loading')
+        document.querySelector('[data-key="s"]').classList.add('is-error')
       })
   }
 
