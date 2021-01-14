@@ -54,7 +54,7 @@ void (function app() {
 
   function save(saveFiles) {
     if (!token) return
-    document.querySelector('[data-key="s"]').classList.remove('is-error')
+    document.querySelector('[data-key="s"]').classList.remove('is-danger')
     document.querySelector('[data-key="s"]').classList.add('is-loading')
     var apiUrl = 'https://api.github.com/gists'
     if (gist) {
@@ -95,7 +95,7 @@ void (function app() {
       .catch(function (error) {
         console.error(error)
         document.querySelector('[data-key="s"]').classList.remove('is-loading')
-        document.querySelector('[data-key="s"]').classList.add('is-error')
+        document.querySelector('[data-key="s"]').classList.add('is-danger')
       })
   }
 
